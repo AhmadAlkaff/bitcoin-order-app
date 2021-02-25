@@ -33,9 +33,15 @@ export class FormComponent implements OnInit, AfterViewInit, OnChanges {
 
   ngOnInit() {
     this.orderTypeDefault = this.activatedRoute.snapshot.params.orderType;
+    console.log(this.orderTypeDefault);
+    if ( this.orderTypeDefault === 'Sell' ) {
+      this.buy = false;
+    }
+
     this.bitcoinSvc.getPrice()
       .then(result => {
-        this.myPrice = result.BTCSGD.ask;
+        console.log(result);
+        this.myPrice = result.ask;
       })
       .catch(error => {
         console.log(error);
@@ -43,7 +49,9 @@ export class FormComponent implements OnInit, AfterViewInit, OnChanges {
   }
 
   processForm(f: NgForm, myPrice, myAmt) {
-    const x = this.bitcoinSvc.saveOrderDetails(f.value, myPrice, myAmt).then(result => {
+    const orderType = this.buy ? 'Buy' : 'Sell';
+    console.log(orderType);
+    const x = this.bitcoinSvc.saveOrderDetails(f.value, myPrice, myAmt, orderType).then(result => {
       console.log(result);
       this.router.navigate(['/confirm', result.id]);
     });
@@ -74,9 +82,9 @@ export class FormComponent implements OnInit, AfterViewInit, OnChanges {
     this.bitcoinSvc.getPrice()
       .then(result => {
         if (buyOrSell === 'Buy') {
-          this.myPrice = result.BTCSGD.ask;
+          this.myPrice = result.ask;
         } else if (buyOrSell === 'Sell') {
-          this.myPrice = result.BTCSGD.bid;
+          this.myPrice = result.bid;
         } else {
           this.myPrice = 0;
         }
@@ -91,6 +99,18 @@ export class FormComponent implements OnInit, AfterViewInit, OnChanges {
       const sum = unit * this.myPrice;
       this.myAmt = sum.toFixed(2);
     }
+  }
+
+  resetForm(f: NgForm) {
+    console.log(f.value);
+    f.controls['contactno'.toString()].reset();
+    f.controls['bitAddress'.toString()].reset();
+    f.controls['myQr'.toString()].reset();
+    f.controls['dob'.toString()].reset();
+    f.controls['gender'.toString()].reset();
+    f.controls['name'.toString()].reset();
+    f.controls['orderDate'.toString()].reset();
+    f.controls['unit'.toString()].reset();
   }
 
 }
