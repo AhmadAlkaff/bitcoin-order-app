@@ -1,21 +1,24 @@
 {
   "configVersion": 1,
-  "timestamp": 1614228431501,
+  "timestamp": 1614229987172,
   "index": "https://AhmadAlkaff.github.io/bitcoin-order-app/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "https://AhmadAlkaff.github.io/bitcoin-order-app/favicon.ico",
         "https://AhmadAlkaff.github.io/bitcoin-order-app/index.html",
-        "https://AhmadAlkaff.github.io/bitcoin-order-app/main.15fdab22add068c609b4.js",
+        "https://AhmadAlkaff.github.io/bitcoin-order-app/main.3b263485edd060fc6f9c.js",
         "https://AhmadAlkaff.github.io/bitcoin-order-app/manifest.webmanifest",
-        "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills-es5.d6dbe74bff0d24406d5b.js",
-        "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills.00e0ac70c7a61a994d40.js",
-        "https://AhmadAlkaff.github.io/bitcoin-order-app/runtime.69aad174de386c36a16c.js",
-        "https://AhmadAlkaff.github.io/bitcoin-order-app/styles.cd5cd5bb33d5d36675b8.css"
+        "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills-es5.3ccaf80e20d8ac4875e0.js",
+        "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills.acde8f9ccbbcf888427d.js",
+        "https://AhmadAlkaff.github.io/bitcoin-order-app/runtime.e227d1a0e31cbccbf8ec.js",
+        "https://AhmadAlkaff.github.io/bitcoin-order-app/styles.0026c7e19da9ffda663a.css"
       ],
       "patterns": []
     },
@@ -23,6 +26,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/back2.jpg",
         "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/back3.png",
@@ -40,7 +46,7 @@
         "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/icons/icon-96x96.png",
         "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/img/BCH.svg",
         "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/pixel.gif",
-        "https://AhmadAlkaff.github.io/bitcoin-order-app/back6.b820a7afbeaf4e4c5246.jpg"
+        "https://AhmadAlkaff.github.io/bitcoin-order-app/back6.7a687447a04d7b757f66.jpg"
       ],
       "patterns": []
     }
@@ -63,15 +69,15 @@
     "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/img/BCH.svg": "47c3dbf4b1059834f740ce1fad644ba50d88d899",
     "https://AhmadAlkaff.github.io/bitcoin-order-app/assets/pixel.gif": "87bb3a5dcd68684dee2e401dc8ed016eb6bea75f",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/back6.b820a7afbeaf4e4c5246.jpg": "bb1d88aec46a62d77cf358868f406f68399e7b8f",
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/back6.7a687447a04d7b757f66.jpg": "bb1d88aec46a62d77cf358868f406f68399e7b8f",
     "https://AhmadAlkaff.github.io/bitcoin-order-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/index.html": "e15fa9175ef0ceadd91a898fa3a5044972aa230a",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/main.15fdab22add068c609b4.js": "5ca97ef23bebc374df3488f42d4e8df97ed24a35",
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/index.html": "c6e12f157e35e2e80d1797d7016fd18735cb85ff",
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/main.3b263485edd060fc6f9c.js": "55711194262b927c4d6d0b1f2b4131ab9a9055f3",
     "https://AhmadAlkaff.github.io/bitcoin-order-app/manifest.webmanifest": "da1eee6ec517d6398dc60e53058e5fec8304e10f",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills-es5.d6dbe74bff0d24406d5b.js": "9d8470a6053852e77ee43b505664317f721b13ae",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills.00e0ac70c7a61a994d40.js": "e68240c3b4dc50491b1b65d39a7791c1572712a0",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/runtime.69aad174de386c36a16c.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://AhmadAlkaff.github.io/bitcoin-order-app/styles.cd5cd5bb33d5d36675b8.css": "26453d47ec36430b523ace93361172ee2488aa30"
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills-es5.3ccaf80e20d8ac4875e0.js": "d579f086e6369e2976d5e4afdf8789d3239c59a3",
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/polyfills.acde8f9ccbbcf888427d.js": "00d68f6bec8622ed1a323563d0a30dd7a541895c",
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://AhmadAlkaff.github.io/bitcoin-order-app/styles.0026c7e19da9ffda663a.css": "bf7eba5531a77d48cf09501d3abfcc40bbc222d1"
   },
   "navigationUrls": [
     {
