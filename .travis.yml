@@ -19,6 +19,8 @@ before_script:
   - npm install -g @angular/cli
   
 script:
+  - ng lint
+  - npm audit fix
   - ng build --prod --base-href https://AhmadAlkaff.github.io/bitcoin-order-app/
   
 after_success:
